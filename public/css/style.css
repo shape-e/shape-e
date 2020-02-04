@@ -1,0 +1,331 @@
+body{
+    overflow-x: hidden;
+ }
+
+.scroll::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    display: none;  /* Ocultar scroll */
+}
+
+.link:hover{
+    text-decoration:none;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.bar{
+ width: 100%;
+ height: 10px;
+}
+
+.marginportadas{
+    margin:15px 15%;
+}
+
+.card-noticias{
+    width: 18rem;
+}
+.botonizquierdo{
+    z-index: 100;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+    border-width: 0px;
+    border-style: solid;
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #ffffff;
+    top: 250px;
+    left: -13px;
+}
+
+
+.botonderecha{
+    z-index: 100;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+    border-width: 0px;
+    border-style: solid;
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #ffffff;
+    top: 250px;
+    left: 98%;
+}
+
+.botonizquierdocapitulo{
+    z-index: 100;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #14141454;
+    border-color: #14141454;
+    border-width: 0px;
+    border-style: solid;
+    position: absolute;
+    height: 153px;
+    
+}
+
+.botonderechacapitulo{
+    z-index: 100;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #14141454;
+    border-color: #14141454;
+    border-width: 0px;
+    border-style: solid;
+    height: 153px;
+    outline:none;
+}
+
+
+.temporada2,.temporada3{
+    display: none;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .botonizquierdo{
+        display:none;
+        
+        
+    }
+    
+    .botonderecha{
+        display:none;
+
+    }
+    
+    .marginportadas{
+        margin:15px 4%;
+    }
+
+    
+}
+
+.texto-des{
+    display: flex!important;
+    flex-wrap: wrap!important;
+    flex-direction: row!important;
+    align-items: center ;
+}
+
+.text-w{
+    width: 70%;
+    font-size: 35px;
+    text-align: center;
+}
+
+.texto-des-b{
+    display: flex;   
+    flex-wrap: wrap!important;
+    flex-direction: wrap!important;
+    align-items: center ;
+}
+.img-d{
+    width: 30%;
+}
+
+.ico-linea-aprendisaje{
+    width: 100%;
+}
+
+.caja-de-cursos{
+    width: 241px;
+    margin: 10px;
+}
+
+.ico-linea-aprendi{
+    width: 15%;
+}
+
+.img-ico-curso{
+    width: 140px;
+}
+
+.titulo-cursos{
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+.card-body-respon{
+    width: 241px;
+    height: 237px;
+}
+
+@media (max-width: 600px) {
+    .card-body-respon{
+        width: 204px;
+        height: 237px;
+    }
+
+    .card-noticias{
+        width: 100%;
+    }
+
+    .titulo-cursos{
+        font-size: 1.15rem;
+    }
+
+
+    .img-ico-curso{
+        width: 140px;
+    }
+    
+    
+    .ico-linea-aprendi{
+        width: 27%;
+    }
+
+    .titilo-linea-aprendisaje{
+        display: flex;
+    align-items: center;
+        width: 100%;
+    }
+
+    .linea-aprendisaje-descripcion{
+        display: none;
+    }
+}
+
+.triangulo-2 {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;  
+}
+
+.d-menu{
+    display: flex!important;
+}
+
+
+@media (max-width: 900px) {
+    
+    .d-menu{
+        display: flex!important;
+        flex-direction: column;
+    }
+    
+    .texto-des{
+        display: flex!important;
+        flex-wrap: wrap!important;
+        flex-direction: row!important;
+    }
+
+    .text-w{
+        width: 100%;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .img-d{
+        width: 100%;
+    }
+
+    .texto-des-b{
+        display: flex;   
+        flex-wrap: wrap!important;
+        flex-direction: column-reverse;
+    }
+}
+
+/*Portadas de lineas de aprendisaje*/
+
+.estrella{
+    background-image: url(../img/estrellas.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0px -15px;
+}
+
+.lazyLoad {
+    width: 100%;
+    opacity: 0;
+}
+
+.visible {
+    transition: opacity 1000ms ease;
+    opacity: 1;
+}
+
+.misCursos {
+	box-shadow: 0px 0px 3px 0px #000000;
+	background-color:#4933CC;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 15px;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: helvetica;
+}
+.misCursos:hover {
+    background-color:#352696;
+    color:#ffffff;
+
+}
+.misCursos:active {
+	position:relative;
+	top:1px;
+}
+
+.cursos{
+    box-shadow: 0px 0px 3px 0px #000000;
+	background-color:#14a25a;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 15px;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: helvetica;
+}
+
+.cursos:hover {
+    background-color:#107c46;
+    color:#ffffff;
+
+}
+.cursos:active {
+	position:relative;
+	top:1px;
+}
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
