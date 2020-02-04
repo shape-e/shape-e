@@ -19,10 +19,14 @@ class Admin
         if (Auth::check()) {
             if (Auth::user()->email == "aviladaniel009@gmail.com") {
                 return $next($request);
+            }else if(Auth::user()->rango == "praticante"){
+                return redirect()->guest('home');
             }
-            if (Auth::user()->rango == "practicante") {
-                return $next($request);
+            else{
+                return redirect()->guest('home');
+
             }
+            
         }else{
             return redirect()->guest('home');
         }

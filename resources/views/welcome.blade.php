@@ -9,7 +9,7 @@
         <a href="/normas-de-la-comunidad" class="" style="display: flex;justify-content: center;padding: 15px;color:#3d2ca5;">Normas de las comunidad</a>
     </div>
     <div class="inicio d-flex  justify-content-center align-items-center">
-    <img src="{{ asset('img/v.webp') }}" width="100%" alt="" srcset="">
+    <img src="https://shape-e.com/img/v.webp" width="100%" alt="" srcset="">
 
     </div>
     <!--<div class="inicio" style="background: url('{{ asset('img/fondo-4.png') }}')no-repeat center center;height: 438px;"></div>-->
@@ -22,14 +22,14 @@
         <div class="d-flex">
             <div class="d-flex flex-column">
                 <div class="texto-des" style="color:#ffffff;">
-                    <img src="{{ asset('img/w.webp') }}" class="img-d" alt="" srcset="">
+                    <img src="https://shape-e.com/img/w.webp" class="img-d" alt="" srcset="">
                     <p class="text-w">Se acabaron las clases innecesarias de relleno que vienen en costosas carreras universitarias.</p> 
 
                 </div>
 
                 <div class="texto-des-b " style="color:#ffffff;">
                     <p class="text-w">Creamos la educación del futuro y tu haces parte clave de la creación de esa educación.</p> 
-                    <img src="{{ asset('img/co.webp') }}" class="img-d" alt="" srcset="">
+                    <img src="https://shape-e.com/img/co.webp" class="img-d" alt="" srcset="">
 
                 </div>
             </div>
