@@ -135,9 +135,6 @@
 <!-- Sidebar -->
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-  <!-- Divider -->
-  <hr class="sidebar-divider my-0">
-
   <!-- Nav Item - Dashboard -->
   <li class="nav-item active">
     <a class="nav-link" href="/panel">
@@ -164,11 +161,11 @@
 
   <!-- Nav Item - Pages Collapse Menu -->
   <li class="nav-item">
-    <a class="nav-link " href="/page" >
+    <a class="nav-link flex" href="/page" >
       <i class="fas fa-fw fa-folder"></i>
       <span>Pages</span>
     </a>
-    <a class="nav-link" href="/panel/cursos" >
+    <a class="nav-link flex" href="/panel/cursos" >
       <i class="fas fa-fw fa-folder "></i>
       <span>Cursos</span>
     </a>
