@@ -135,14 +135,6 @@
 <!-- Sidebar -->
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-  <!-- Sidebar - Brand -->
-  <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/panel">
-    <div class="sidebar-brand-icon rotate-n-15">
-      <i class="fas fa-laugh-wink"></i>
-    </div>
-    <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
-  </a>
-
   <!-- Divider -->
   <hr class="sidebar-divider my-0">
 
@@ -172,13 +164,13 @@
 
   <!-- Nav Item - Pages Collapse Menu -->
   <li class="nav-item">
-    <a class="nav-link text-center" href="/page" >
-      <i class="fas fa-fw fa-folder col-12"></i>
-      <span class="col-12">Pages</span>
+    <a class="nav-link " href="/page" >
+      <i class="fas fa-fw fa-folder"></i>
+      <span>Pages</span>
     </a>
-    <a class="nav-link text-center" href="/panel/cursos" >
-      <i class="fas fa-fw fa-folder col-12"></i>
-      <span class="col-12">Cursos</span>
+    <a class="nav-link" href="/panel/cursos" >
+      <i class="fas fa-fw fa-folder "></i>
+      <span>Cursos</span>
     </a>
   </li>
 

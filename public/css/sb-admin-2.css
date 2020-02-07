@@ -10094,7 +10094,7 @@ a:focus {
 }
 
 .sidebar .nav-item .nav-link span {
-  font-size: 0.65rem;
+  font-size: 1.6rem;
   display: block;
 }
 
@@ -10257,16 +10257,16 @@ a:focus {
   .sidebar .nav-item .nav-link {
     display: block;
     width: 100%;
-    text-align: left;
-    padding: 1rem;
-    width: 14rem;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    width: 6.5rem;
   }
   .sidebar .nav-item .nav-link i {
-    font-size: 0.85rem;
+    font-size: 1.2rem;
     margin-right: 0.25rem;
   }
   .sidebar .nav-item .nav-link span {
-    font-size: 0.85rem;
+    font-size: 1.2rem;
     display: inline;
   }
   .sidebar .nav-item .nav-link[data-toggle="collapse"]::after {
