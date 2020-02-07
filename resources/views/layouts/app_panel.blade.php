@@ -77,9 +77,8 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light " style="background: -webkit-linear-gradient(0deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    background: -moz-linear-gradient(0deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    background: -o-linear-gradient(0deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    background: -ms-linear-gradient(0deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    background: linear-gradient(90deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);padding: 0px 50px;">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light " style="   -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25)">
+                <a class="navbar-brand before" href="{{ url('/') }}">
                     <img src="https://shape-e.com/svg/bo330-w53wt.webp" width="130px" alt="logo" >
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -99,20 +98,23 @@
                             <li class="d-flex nav-item">
                                 <a class="nav-link" href="/blog">{{ __('Blog') }}</a>
                                 <a class="nav-link"  style="display:none;" href="{{ route('login') }}">{{ __('Iniciar sesión') }}</a>
+
                             </li>
                             @if (Route::has('register'))
                                 
                             @endif
                         @else
-                                <a id="navbarDropdown" class="nav-link" href="/home" >
-                                    Mis cursos
-                                </a>
+                               
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" style="color: #000" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
                                     
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a id="navbarDropdown" class="dropdown-item" href="/home" >
+                                        Mis cursos
+                                    </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -127,17 +129,17 @@
                         @endguest
                     </ul>
                 </div>
-            </div>
+            
         </nav>
         <!-- Page Wrapper -->
   <div id="wrapper">
 
 <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion pt-5" id="accordionSidebar">
 
   <!-- Nav Item - Dashboard -->
   <li class="nav-item active">
-    <a class="nav-link" href="/panel">
+    <a class="nav-link flex" href="/panel">
       <i class="fas fa-fw fa-tachometer-alt"></i>
       <span>Dashboard</span></a>
   </li>
