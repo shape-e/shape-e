@@ -10302,9 +10302,7 @@ a:focus {
   .sidebar .sidebar-brand .sidebar-brand-text {
     display: inline;
   }
-  .sidebar .sidebar-heading {
-    text-align: left;
-  }
+  
   .sidebar.toggled {
     overflow: visible;
     width: 6.5rem !important;

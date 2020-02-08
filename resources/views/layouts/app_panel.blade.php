@@ -144,8 +144,8 @@
   <!-- Nav Item - Dashboard -->
   <li class="nav-item active ptop-5">
     <a class="nav-link flex" href="/panel">
-      <i class="fas fa-fw fa-tachometer-alt"></i>
-      <span>Dashboard</span></a>
+      <i class="fas fa-home"></i>
+      <span>Inicio</span></a>
   </li>
 
   <!-- Divider -->
@@ -169,7 +169,7 @@
   <li class="nav-item">
     <a class="nav-link flex" href="/page" >
       <i class="fas fa-fw fa-folder"></i>
-      <span>Pages</span>
+      <span>Post</span>
     </a>
     <a class="nav-link flex" href="/panel/cursos" >
       <i class="fas fa-fw fa-folder "></i>
