@@ -7702,6 +7702,17 @@ button.bg-dark:focus {
 .py-5 {
   padding-top: 3rem !important;
 }
+@media (min-width: 576px){
+  .ptop-5{
+  padding-top: 1rem !important;
+  }
+
+
+@media (min-width: 768px){
+  .ptop-5{
+  padding-top: 2rem !important;
+  }
+}
 
 .pr-5,
 .px-5 {

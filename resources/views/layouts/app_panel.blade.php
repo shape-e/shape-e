@@ -142,7 +142,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion pt-5" id="accordionSidebar">
 
   <!-- Nav Item - Dashboard -->
-  <li class="nav-item active">
+  <li class="nav-item active ptop-5">
     <a class="nav-link flex" href="/panel">
       <i class="fas fa-fw fa-tachometer-alt"></i>
       <span>Dashboard</span></a>
