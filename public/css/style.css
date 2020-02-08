@@ -1,6 +1,6 @@
 body{
     overflow-x: hidden;
- }
+}
 
 .scroll::-webkit-scrollbar {
     width: 8px;     /* Tamaño del scroll en vertical */
@@ -14,8 +14,8 @@ body{
 }
 
 .bar{
- width: 100%;
- height: 10px;
+    width: 100%;
+    height: 10px;
 }
 
 .marginportadas{
@@ -32,7 +32,7 @@ body{
     color: #000;
     border-width: 0px;
     border-style: solid;
-
+    
     position: absolute;
     width: 50px;
     height: 50px;
@@ -52,7 +52,7 @@ body{
     color: #000;
     border-width: 0px;
     border-style: solid;
-
+    
     position: absolute;
     width: 50px;
     height: 50px;
@@ -109,13 +109,13 @@ body{
     
     .botonderecha{
         display:none;
-
+        
     }
     
     .marginportadas{
         margin:15px 4%;
     }
-
+    
     
 }
 
@@ -173,16 +173,16 @@ body{
         width: 204px;
         height: 237px;
     }
-
+    
     .card-noticias{
         width: 100%;
     }
-
+    
     .titulo-cursos{
         font-size: 1.15rem;
     }
-
-
+    
+    
     .img-ico-curso{
         width: 140px;
     }
@@ -191,13 +191,13 @@ body{
     .ico-linea-aprendi{
         width: 27%;
     }
-
+    
     .titilo-linea-aprendisaje{
         display: flex;
-    align-items: center;
+        align-items: center;
         width: 100%;
     }
-
+    
     .linea-aprendisaje-descripcion{
         display: none;
     }
@@ -209,7 +209,7 @@ body{
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-top: 20px solid #fff;
-
+    
     -webkit-transition: -webkit-transform .8s ease-in-out;
     -ms-transition: -ms-transform .8s ease-in-out;
     transition: transform .8s ease-in-out;  
@@ -232,17 +232,17 @@ body{
         flex-wrap: wrap!important;
         flex-direction: row!important;
     }
-
+    
     .text-w{
         width: 100%;
         font-size: 26px;
         text-align: center;
     }
-
+    
     .img-d{
         width: 100%;
     }
-
+    
     .texto-des-b{
         display: flex;   
         flex-wrap: wrap!important;
@@ -254,9 +254,9 @@ body{
 
 .estrella{
     background-image: url(../img/estrellas.webp);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 0px -15px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0px -15px;
 }
 
 .lazyLoad {
@@ -270,13 +270,13 @@ body{
 }
 
 .misCursos {
-	box-shadow: 0px 0px 3px 0px #000000;
-	background-color:#4933CC;
-	border-radius:42px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-size: 15px;
+    box-shadow: 0px 0px 3px 0px #000000;
+    background-color:#4933CC;
+    border-radius:42px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size: 15px;
     padding: 10px 50px;
     text-decoration: none;
     font-weight: 600;
@@ -285,21 +285,21 @@ body{
 .misCursos:hover {
     background-color:#352696;
     color:#ffffff;
-
+    
 }
 .misCursos:active {
-	position:relative;
-	top:1px;
+    position:relative;
+    top:1px;
 }
 
 .cursos{
     box-shadow: 0px 0px 3px 0px #000000;
-	background-color:#14a25a;
-	border-radius:42px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-size: 15px;
+    background-color:#14a25a;
+    border-radius:42px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size: 15px;
     padding: 10px 50px;
     text-decoration: none;
     font-weight: 600;
@@ -309,11 +309,11 @@ body{
 .cursos:hover {
     background-color:#107c46;
     color:#ffffff;
-
+    
 }
 .cursos:active {
-	position:relative;
-	top:1px;
+    position:relative;
+    top:1px;
 }
 .embed-container {
     position: relative;
@@ -328,3 +328,42 @@ body{
     width: 100%;
     height: 100%;
 }
+
+.logo{
+    position:relative;
+}
+
+.before{   
+    position: absolute;
+    position: absolute;
+    left: 21%;
+    top: -62%;
+    width: 125px;
+    height: 170px;
+    background: #4e73df;
+    transform: rotate(45deg) translate(-50%);
+}
+
+
+@media (min-width: 576px){
+    .before{
+        left: 8%;
+        top: -65%;
+        width: 170px;
+        height: 180px;
+    }
+    
+    
+}
+
+@media (min-width:768px){
+    .before{   
+        left: 34%;
+        top: -75%;
+        width: 150px;
+        height: 200px;
+    }
+}
+
+
+

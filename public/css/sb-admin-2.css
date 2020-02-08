@@ -204,6 +204,8 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  position: relative;
+  z-index: 100;
 }
 
 svg {
