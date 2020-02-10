@@ -340,7 +340,7 @@ body{
     top: -62%;
     width: 125px;
     height: 170px;
-    background: #4e73df;
+    background: #5e2dd3;
     transform: rotate(45deg) translate(-50%);
 }
 
@@ -367,3 +367,13 @@ body{
 
 
 
+.degraded-left{
+    background: rgba(83,44,211,1);
+    background: -moz-linear-gradient(top, rgba(83,44,211,1) 0%, rgba(169,52,215,1) 70%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(83,44,211,1)), color-stop(70%, rgba(169,52,215,1)));
+    background: -webkit-linear-gradient(top, rgba(83,44,211,1) 0%, rgba(169,52,215,1) 70%);
+    background: -o-linear-gradient(top, rgba(83,44,211,1) 0%, rgba(169,52,215,1) 70%);
+    background: -ms-linear-gradient(top, rgba(83,44,211,1) 0%, rgba(169,52,215,1) 70%);
+    background: linear-gradient(to bottom, rgba(83,44,211,1) 0%, rgba(169,52,215,1) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#532cd3', endColorstr='#a934d7', GradientType=0 );
+}
