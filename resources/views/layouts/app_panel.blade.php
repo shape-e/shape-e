@@ -85,8 +85,9 @@
                     </a>
                     <div class="before" style="   -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25)"></div>
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler text-primary " style="    background-color: #532CD3 !important;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    
+                    <span class="text-light" ><i class="fas fa-bars fa-1x"></i></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -111,7 +112,7 @@
                                
                             <li class="nav-item dropdown">
                                 
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" style="color: #000; float: right; overflow: hedden" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" style="color: #000; margin-top: 4rem" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
                                     
@@ -132,36 +133,35 @@
                             </li>
                         @endguest
 
-                       
-                            <!-- Nav Item - Dashboard -->
-                            <li class="nav-item active ptop-5">
-                                <a class="nav-link float" href="/panel">
-                                <i class="fas fa-home"></i>
-                                <span>Inicio</span></a>
+                            <li class="display-block">
+                                <ul class="navbar-nav  sidebar sidebar-dark accordion degraded-left"  id="accordionSidebar">
+
+                                    <!-- Nav Item - Dashboard -->
+                                    <li class="nav-item active ptop-5">
+                                        <a class="nav-link" href="/panel">
+                                            <i class="fas fa-home"></i>
+                                            <span>Inicio</span>
+                                        </a>
+                                    </li>
+
+
+                                    <!-- Nav Item - Pages Collapse Menu -->
+                                    <li class="nav-item">
+                                        <a class="nav-link black" href="/page" >
+                                            <i class="fas fa-fw fa-folder"></i>
+                                            <span>Post</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link black" href="/panel/cursos" >
+                                            <i class="fas fa-fw fa-folder "></i>
+                                            <span>Cursos</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
                             </li>
-
-                            <!-- Divider -->
-
-                            <!-- Heading -->
-
-                            <!-- Nav Item - Pages Collapse Menu -->
-                            <li class="nav-item">
-                                <a class="nav-link float" href="/page" >
-                                <i class="fas fa-fw fa-folder"></i>
-                                <span>Post</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link float" href="/panel/cursos" >
-                                <i class="fas fa-fw fa-folder "></i>
-                                <span>Cursos</span>
-                                </a>
-                            </li>
-
-                            <!-- Nav Item - Charts -->
-                            <!-- Divider -->
-
-
                     </ul>
                 </div>
             
@@ -170,51 +170,53 @@
   <div id="wrapper">
 
 <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion pt-5" id="accordionSidebar">
+<ul class=" navbar-nav  sidebar sidebar-dark accordion pt-5 degraded-left"  id="accordionSidebar">
 
-  <!-- Nav Item - Dashboard -->
-  <li class="nav-item active ptop-5">
-    <a class="nav-link flex" href="/panel">
-      <i class="fas fa-home"></i>
-      <span>Inicio</span></a>
-  </li>
+    <div class="display">
+         <!-- Nav Item - Dashboard -->
+        <li class="nav-item active ptop-5">
+            <a class="nav-link flex" href="/panel">
+            <i class="fas fa-home"></i>
+            <span>Inicio</span></a>
+        </li>
 
-  <!-- Divider -->
+        <!-- Divider -->
 
-  <!-- Heading -->
-
-
-  <!-- Nav Item - Pages Collapse Menu -->
+        <!-- Heading -->
 
 
-  <!-- Nav Item - Utilities Collapse Menu -->
-  <!-- Divider -->
-  <hr class="sidebar-divider">
-
-  <!-- Heading -->
-  <div class="sidebar-heading">
-    Addons
-  </div>
-
-  <!-- Nav Item - Pages Collapse Menu -->
-  <li class="nav-item">
-    <a class="nav-link flex" href="/page" >
-      <i class="fas fa-fw fa-folder"></i>
-      <span>Post</span>
-    </a>
-   </li>
-   <li class="nav-item">
-    <a class="nav-link flex" href="/panel/cursos" >
-      <i class="fas fa-fw fa-folder "></i>
-      <span>Cursos</span>
-    </a>
-  </li>
-
-  <!-- Nav Item - Charts -->
-  <!-- Divider -->
-  <hr class="sidebar-divider d-none d-md-block">
+        <!-- Nav Item - Pages Collapse Menu -->
 
 
+        <!-- Nav Item - Utilities Collapse Menu -->
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading s">
+            Addons
+        </div>
+
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+            <a class="nav-link flex" href="/page" >
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Post</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link flex" href="/panel/cursos" >
+            <i class="fas fa-fw fa-folder "></i>
+            <span>Cursos</span>
+            </a>
+        </li>
+
+        <!-- Nav Item - Charts -->
+        <!-- Divider -->
+        <hr class="sidebar-divider d-none d-md-block">
+
+    
+    </div>
 
 </ul>
 <!-- End of Sidebar -->
