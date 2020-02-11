@@ -71,9 +71,9 @@
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
      <!-- <link href="{{ asset('css/cssdesarrollo.css') }}" rel="stylesheet">     -->
-
+    
      <script src="{{asset('js/tinymce/tinymce.min.js')}}" referrerpolicy="origin"></script>
-    <script>tinymce.init({selector:'textarea'});</script>
+    <script>tinymce.init({selector:'textarea_s'});</script>
 </head>
 <body>
     <div id="app">
