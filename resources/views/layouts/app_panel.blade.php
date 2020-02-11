@@ -111,7 +111,7 @@
                                
                             <li class="nav-item dropdown">
                                 
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" style="color: #000" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" style="color: #000; float: right; overflow: hedden" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
                                     
@@ -131,6 +131,37 @@
                                 </div>
                             </li>
                         @endguest
+
+                       
+                            <!-- Nav Item - Dashboard -->
+                            <li class="nav-item active ptop-5">
+                                <a class="nav-link float" href="/panel">
+                                <i class="fas fa-home"></i>
+                                <span>Inicio</span></a>
+                            </li>
+
+                            <!-- Divider -->
+
+                            <!-- Heading -->
+
+                            <!-- Nav Item - Pages Collapse Menu -->
+                            <li class="nav-item">
+                                <a class="nav-link float" href="/page" >
+                                <i class="fas fa-fw fa-folder"></i>
+                                <span>Post</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link float" href="/panel/cursos" >
+                                <i class="fas fa-fw fa-folder "></i>
+                                <span>Cursos</span>
+                                </a>
+                            </li>
+
+                            <!-- Nav Item - Charts -->
+                            <!-- Divider -->
+
+
                     </ul>
                 </div>
             
@@ -171,6 +202,8 @@
       <i class="fas fa-fw fa-folder"></i>
       <span>Post</span>
     </a>
+   </li>
+   <li class="nav-item">
     <a class="nav-link flex" href="/panel/cursos" >
       <i class="fas fa-fw fa-folder "></i>
       <span>Cursos</span>
