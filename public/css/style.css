@@ -330,7 +330,14 @@ body{
 }
 
 .logo{
-    position:relative;
+    position: absolute;
+    left: 59%;
+    top: 30%;
+    bottom: 0;
+    right: 0;
+    transform: translate(-50%) rotate(-45deg);
+    width: 7rem;
+    padding: 1rem 0;
 }
 
 .before{   
@@ -358,8 +365,10 @@ body{
 
 @media (min-width:768px){
     .before{   
-        left: 34%;
-        top: -75%;
+        left: 64px;
+        top: -29px;
+        right: 0;
+        bottom: 0;
         width: 150px;
         height: 200px;
     }
@@ -452,4 +461,12 @@ body{
 .border-b{
     border-bottom: 3px solid #9967d6;
     border-radius: 1%;
+}
+
+.img{
+    background: url('../img/logo.webp');
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    z-index: 100;
 }

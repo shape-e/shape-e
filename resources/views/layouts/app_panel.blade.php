@@ -78,12 +78,11 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-light bg-light " style="   -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25)">
-
-                <div class="logo">
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="https://shape-e.com/svg/bo330-w53wt.webp" width="130px" alt="logo" >
+                    <div></div>
+                <div class="before" style="   -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25)">
+                    <a class="navbar-brand logo" href="{{ url('/') }}">
+                        <img src="https://shape-e.com/img/logo_2a.webp" width="130px" alt="logo" >
                     </a>
-                    <div class="before" style="   -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25)"></div>
                 </div>
                 <button class="navbar-toggler text-primary " style="    background-color: #532CD3 !important;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     
