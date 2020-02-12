@@ -2971,7 +2971,13 @@ readers do not read off random characters that represent icons */
   content: "\f067"; }
 
 .fa-plus-circle:before {
-  content: "\f055"; }
+  content: "\f055";
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: #6562d3; 
+}
 
 .fa-plus-square:before {
   content: "\f0fe"; }
