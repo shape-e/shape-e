@@ -367,13 +367,8 @@ body{
 
 /*PANEL MENU MOVIL*/
 .flex{
-    display: flex !important;
-}
-
-.flex-column{
     flex-direction: column;
 }
-
 
 .degraded-left{
     background: #fff;

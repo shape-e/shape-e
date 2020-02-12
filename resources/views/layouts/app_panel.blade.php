@@ -100,7 +100,7 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links --> 
                         @guest
-                            <li class="d-flex-column nav-item">
+                            <li class="d-flex nav-item">
                                 <a class="nav-link" href="/blog">{{ __('Blog') }}</a>
                                 <a class="nav-link"  style="display:none;" href="{{ route('login') }}">{{ __('Iniciar sesión') }}</a>
 
@@ -175,7 +175,7 @@
     <div class="display">
          <!-- Nav Item - Dashboard -->
         <li class="nav-item active ptop-5">
-            <a class="nav-link flex-column" href="/panel">
+            <a class="nav-link flex" href="/panel">
             <i class="fas fa-home"></i>
             <span>Inicio</span></a>
         </li>
@@ -199,13 +199,13 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link flex-column" href="/page" >
+            <a class="nav-link flex" href="/page" >
             <i class="fas fa-fw fa-folder"></i>
             <span>Post</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link flex-column" href="/panel/cursos" >
+            <a class="nav-link flex" href="/panel/cursos" >
             <i class="fas fa-fw fa-folder "></i>
             <span>Cursos</span>
             </a>
