@@ -366,6 +366,15 @@ body{
 }
 
 /*PANEL MENU MOVIL*/
+.flex{
+    display: flex !important;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+
 .degraded-left{
     background: #fff;
 }
@@ -448,5 +457,4 @@ body{
 .border-b{
     border-bottom: 3px solid #9967d6;
     border-radius: 1%;
-    width: 7.5rem;
 }

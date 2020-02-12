@@ -1,7 +1,12 @@
 @extends('layouts.app_panel')
 
 @section('content')
+
 <div class="mx-5">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-2 mt-3 text-gray-800 border-b ">New Post</h1>
+    </div>
+
     <form action="/page" enctype="multipart/form-data" method="post">
     @csrf
 
