@@ -206,6 +206,13 @@ img {
   border-style: none;
   position: relative;
   z-index: 100;
+  width: 5rem;
+}
+
+@media (min-width: 768px){
+  img{
+    width: 6rem;
+  }
 }
 
 svg {
@@ -7704,7 +7711,7 @@ button.bg-dark:focus {
 }
 @media (min-width: 576px){
   .ptop-5{
-  padding-top: 1rem !important;
+  padding-top: 2rem !important;
   }
 
 
