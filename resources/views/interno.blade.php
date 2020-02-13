@@ -9,7 +9,7 @@
 @foreach($cursos as $curso)
 <a href="cursos/{{$curso->url}}">
   <div class="card">
-    <img src="{{$curso->portada}}" class="card-img-top" alt="...">
+    <img src="{{Request::root() . '/img/ico_principal/' .  $curso->portada}}" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title text-center font-weight-bolder">{{$curso->nombre}}</h5>
       <p class="card-text">{{$curso->descripcion}}</p>

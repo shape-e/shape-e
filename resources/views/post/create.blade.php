@@ -9,7 +9,7 @@
 
         <input class="file-path validate mb-3" type="file" name="img" id="img">
 
-        <textarea id="contenido" name="contenido">Next, use our Get Started docs to setup Tiny!</textarea>
+        <textarea_s id="contenido" class="textarea_s" name="contenido">Next, use our Get Started docs to setup Tiny!</textarea_s>
         
         <button class="my-2 btn btn-primary w-100">Guardar</button>
     </form>

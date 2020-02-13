@@ -47,3 +47,10 @@ Route::get('/{url}', 'BlogController@post');
 
 Route::resource('/panel/cursos', 'CursosController');
 
+Route::resource('/panel/cursos/{url}/modulo', 'CrearModuloController');
+
+Route::get('/panel/cursos/{url}/modulo/{id}/confirmDelete', 'CrearModuloController@confirmDelete');
+
+Route::resource('/panel/cursos/{url}/clases', 'CrearClasesController');
+
+Route::get('/panel/cursos/{url}/clases/{id}/confirmDelete', 'CrearClasesController@confirmDelete');
