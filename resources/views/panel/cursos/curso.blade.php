@@ -30,7 +30,8 @@
       <th scope="row">{{$curso->id}}</th>
       <td>{{$curso->nombre}}</td>
       <td><a href="/panel/cursos/{{$curso->url}}/edit">Editar</a></td>
-      
+      <td><a href="/panel/cursos/{{$curso->url}}/edit">Eliminar</a></td>
+
     </tr>
     @endforeach    
 

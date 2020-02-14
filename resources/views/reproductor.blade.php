@@ -1,18 +1,42 @@
 @extends('layouts.app')
 
 @section('content')
+<script>
+
+
+var xhr = new XMLHttpRequest();
+const user = {!! json_encode($clases->video) !!};
+
+xhr.open('GET', user);
+
+xhr.responseType = 'arraybuffer';
+
+xhr.onload = (e)=>{
+ 
+   let blob = new Blob([xhr.response])
+   let url = URL.createObjectURL(blob)
+ 
+   let image = document.getElementById('video_externo')
+
+   image.src = url;
+ 
+};
+
+xhr.send();
+</script>
+
 <div class="d-flex flex-wrap">
    <div class="d-a d-flex flex-column">
     @if ($clases->formato_video === "externo")
         <div class="embed-container">
         <iframe  class="w-100 fm-video video-js "
-        src="{{$clases->video}}" 
+        src="" 
         frameborder="0" 
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen></iframe>
         </div>
     @elseif ($clases->formato_video === "youtube")
-    <div class="embed-container">
+    <div  class="embed-container">
         <iframe  class="w-100 fm-video video-js "
         src="{{$clases->video}}" 
         frameborder="0" 
@@ -21,7 +45,7 @@
         </div>
     @else
     <video id="fm-video"  class="w-100 fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
-          <source src="{{$clases->video}}" type="video/mp4">
+          <source id="video_externo" >
         </video>
     @endif
         
@@ -84,6 +108,7 @@
     
 </div>
 <script src="{{ asset('js/video.js') }}"></script>
+
 
 
 @endsection
