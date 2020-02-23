@@ -24,7 +24,7 @@
     @else
     
     <video id="fm-video"  class="w-100 fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
-          <source id="video_externo" src="{{$signedUrlCannedPolicy}}" type="video/mp4">
+          <source id="video_externo" src="{{$clases->video}}" type="video/mp4">
         </video>
     @endif
         

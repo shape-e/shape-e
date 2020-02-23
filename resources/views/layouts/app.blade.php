@@ -79,9 +79,15 @@
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-light bg-light " style="background: -webkit-linear-gradient(0deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    background: -moz-linear-gradient(0deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    background: -o-linear-gradient(0deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    background: -ms-linear-gradient(0deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    background: linear-gradient(90deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);padding: 0px 50px;">
             <div class="container">
+                @if(Auth::user()->rango = "normal")
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="https://shape-e.com/svg/bo330-w53wt.webp" width="130px" alt="logo" >
                 </a>
+                @else
+                <a class="navbar-brand" href="{{ url('/cursosinterno') }}">
+                    <img src="https://shape-e.com/svg/bo330-w53wt.webp" width="130px" alt="logo" >
+                </a>
+                @endif
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
