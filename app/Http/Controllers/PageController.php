@@ -15,7 +15,7 @@ class PageController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('admi');
+        $this->middleware('auth');
     }
     /**
      * Display a listing of the resource.
