@@ -7,6 +7,9 @@ use App\Curso;
 use App\Clase;
 use App\Recurso;
 use DB;
+use Aws;
+use Aws\CloudFront\CloudFrontClient;
+use Aws\Exception\AwsException;
 
 class ReproductorController extends Controller
 {
@@ -38,7 +41,26 @@ class ReproductorController extends Controller
         ->limit(1)
         ->get();
 
-        return view('reproductor', compact('curso', 'clases','recursos', 'clase_siguientes'));
+
+        $client = new Aws\CloudFront\CloudFrontClient([
+            'profile' => 'default',
+            'version' => '2014-11-06',
+            'region' => 'us-east-2'
+        ]);
+        
+// Set up parameter values for the resource
+$resourceKey = 'https://d1h4p4srnnzybm.cloudfront.net/Analizar-cambios-en-los-archivos-de-tu-proyecto-con-Git.mp4';
+$expires = time() + 10000;
+
+// Create a signed URL for the resource using the canned policy
+$signedUrlCannedPolicy = $client->getSignedUrl([
+    'url' => $resourceKey,
+    'expires' => $expires,
+    'private_key' => base_path() . '/public/pk-APKAJGOJXTSBE3UPPJTQ.pem',
+    'key_pair_id' => 'APKAJGOJXTSBE3UPPJTQ'
+]);
+      
+        return view('reproductor', compact('curso', 'clases','recursos', 'clase_siguientes', 'signedUrlCannedPolicy'));
 
     }
 }
