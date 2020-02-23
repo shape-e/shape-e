@@ -7,6 +7,8 @@ use App\Curso;
 use App\Clase;
 use App\Recurso;
 use DB;
+use Aws;
+
 
 class ReproductorController extends Controller
 {
@@ -37,6 +39,7 @@ class ReproductorController extends Controller
         ->orderBy('id', 'asc')
         ->limit(1)
         ->get();
+
 
         return view('reproductor', compact('curso', 'clases','recursos', 'clase_siguientes'));
 
