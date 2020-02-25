@@ -47,6 +47,7 @@
         <div>
             <a href="/panel/cursos/{{$curso->url}}/modulo/create" class="btn btn-primary">Crear modulo</a> 
             <a href="/panel/cursos/{{$curso->url}}/clases/create" class="btn btn-primary">Agregar Clase</a>
+            <a href="/panel/cursos/{{$curso->url}}/clasesTexto/create" class="btn btn-primary">Agregar clase de texto</a>
         </div> 
     </div>
 </div>
@@ -68,6 +69,19 @@
                 @endif  
                 
                  @if($clase->tipo_de_item == "clase")
+                <div class="card-body presion d-flex justify-content-between my-2" style="border: 1px solid rgba(0,0,0,.125);">
+                        <h5 style="padding: 0.5rem;">{{$clase->nombre}}</h5>
+                        <h5 style="padding: 0.5rem;">Id:{{$clase->id}}</h5>                        
+                        <h5 style="margin:10px 0 ;align-self: center;">Clase</h5>   
+                        <div >
+                            <a href="/panel/cursos/{{$clase->id_curso}}/clases/{{$clase->id}}/confirmDelete" class="btn btn-danger">Eliminar</a>
+                            <a href="/panel/cursos/{{$clase->id_curso}}/clases/{{$clase->id}}/edit" class="btn btn-info">Editar</a>
+                        </div>
+                </div>
+
+                
+                @endif  
+                @if($clase->tipo_de_item == "texto")
                 <div class="card-body presion d-flex justify-content-between my-2" style="border: 1px solid rgba(0,0,0,.125);">
                         <h5 style="padding: 0.5rem;">{{$clase->nombre}}</h5>
                         <h5 style="padding: 0.5rem;">Id:{{$clase->id}}</h5>                        

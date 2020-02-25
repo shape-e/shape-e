@@ -54,3 +54,5 @@ Route::get('/panel/cursos/{url}/modulo/{id}/confirmDelete', 'CrearModuloControll
 Route::resource('/panel/cursos/{url}/clases', 'CrearClasesController');
 
 Route::get('/panel/cursos/{url}/clases/{id}/confirmDelete', 'CrearClasesController@confirmDelete');
+
+Route::resource('/panel/cursos/{url}/clasesTexto', 'CrearClasesTextoController');
