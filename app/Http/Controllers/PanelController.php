@@ -13,7 +13,7 @@ class PanelController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('admi');
+        $this->middleware('auth');
     }
     public function index(){
         return view('panel/panel');

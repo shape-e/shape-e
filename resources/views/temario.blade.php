@@ -30,7 +30,7 @@
                 @endif  
                 @if($clase->tipo_de_item == "clase")
 
-                <a class="card-body presion d-flex justify-content-between" style="border: 1px solid rgba(0,0,0,.125);" href="r/{{$clase->id_curso}}/{{$clase->url}}">
+                <a class="card-body presion d-flex justify-content-between my-2" style="border: 1px solid rgba(0,0,0,.125);" href="r/{{$clase->id_curso}}/{{$clase->url}}">
                         <div style="padding: 0.5rem;">{{$clase->nombre}}</div>
                         <div class="d-flex justify-content-between">
                             <div style="color: #495057;font-weight: 100;padding: 0.5rem;">{{$clase->minuto}}</div>

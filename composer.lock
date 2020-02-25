@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "91e2964df0595e2ffeb933ebabcd5258",
     "packages": [
         {
@@ -18,6 +19,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/6f41bb144c415e89726eaad2ccdf4d0a54d6e7cf",
                 "reference": "6f41bb144c415e89726eaad2ccdf4d0a54d6e7cf",
+=======
+    "content-hash": "d133ccaa805f05640257f11daa1224f4",
+    "packages": [
+        {
+            "name": "aws/aws-sdk-php",
+            "version": "3.133.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aws/aws-sdk-php.git",
+                "reference": "6d0036fe1be474d2849dc990daaaa76215846966"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/6d0036fe1be474d2849dc990daaaa76215846966",
+                "reference": "6d0036fe1be474d2849dc990daaaa76215846966",
+>>>>>>> d2df4c7d89ae7687a1498a98e75c17f00a2dd38d
                 "shasum": ""
             },
             "require": {
@@ -88,7 +105,11 @@
                 "s3",
                 "sdk"
             ],
+<<<<<<< HEAD
             "time": "2020-02-19T19:12:22+00:00"
+=======
+            "time": "2020-02-18T19:11:24+00:00"
+>>>>>>> d2df4c7d89ae7687a1498a98e75c17f00a2dd38d
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -305,6 +326,70 @@
                 "schedule"
             ],
             "time": "2019-03-31T00:38:28+00:00"
+        },
+        {
+            "name": "dreamonkey/laravel-cloudfront-url-signer",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dreamonkey/laravel-cloudfront-url-signer.git",
+                "reference": "8e07cb0bf81e86c3358b1a9e284af9fa6ddb9ceb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dreamonkey/laravel-cloudfront-url-signer/zipball/8e07cb0bf81e86c3358b1a9e284af9fa6ddb9ceb",
+                "reference": "8e07cb0bf81e86c3358b1a9e284af9fa6ddb9ceb",
+                "shasum": ""
+            },
+            "require": {
+                "aws/aws-sdk-php": "^3.52",
+                "illuminate/support": "^5.6|^6.0",
+                "php": "^7.1.3"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.4.4|~3.5.0|~3.6.0",
+                "phpunit/phpunit": "^6.3|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Dreamonkey\\CloudFrontUrlSigner\\CloudFrontUrlSignerServiceProvider"
+                    ],
+                    "aliases": {
+                        "CloudFrontUrlSigner": "Dreamonkey\\CloudFrontUrlSigner\\Facades\\CloudFrontUrlSigner"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dreamonkey\\CloudFrontUrlSigner\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paolo Caleffi",
+                    "email": "p.caleffi@dreamonkey.com",
+                    "homepage": "https://dreamonkey.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel 5.6+ wrapper around CloudFront canned signed URLs",
+            "homepage": "https://github.com/dreamonkey/laravel-cloudfront-url-signer",
+            "keywords": [
+                "cloudfront",
+                "dreamonkey",
+                "laravel-cloudfront-url-signer",
+                "private content"
+            ],
+            "time": "2019-10-08T08:49:14+00:00"
         },
         {
             "name": "egulias/email-validator",

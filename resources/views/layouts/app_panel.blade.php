@@ -77,13 +77,16 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light " style="background: -webkit-linear-gradient(0deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    background: -moz-linear-gradient(0deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    background: -o-linear-gradient(0deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    background: -ms-linear-gradient(0deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    background: linear-gradient(90deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);padding: 0px 50px;">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="https://shape-e.com/svg/bo330-w53wt.webp" width="130px" alt="logo" >
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light " style="   -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25)">
+                    <div></div>
+                <div class="before" style="   -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25)">
+                    <a class="navbar-brand logo" href="{{ url('/') }}">
+                        <img src="https://shape-e.com/img/logo_2a.webp" width="130px" alt="logo" >
+                    </a>
+                </div>
+                <button class="navbar-toggler text-primary " style="    background-color: #532CD3 !important;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    
+                    <span class="text-light" ><i class="fas fa-bars fa-1x"></i></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -99,20 +102,23 @@
                             <li class="d-flex nav-item">
                                 <a class="nav-link" href="/blog">{{ __('Blog') }}</a>
                                 <a class="nav-link"  style="display:none;" href="{{ route('login') }}">{{ __('Iniciar sesión') }}</a>
+
                             </li>
                             @if (Route::has('register'))
                                 
                             @endif
                         @else
-                                <a id="navbarDropdown" class="nav-link" href="/home" >
-                                    Mis cursos
-                                </a>
+                               
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle margin" style="color: #000" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
                                     
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a id="navbarDropdown" class="dropdown-item" href="/home" >
+                                        Mis cursos
+                                    </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -125,68 +131,91 @@
                                 </div>
                             </li>
                         @endguest
+
+                            <li class="display-block">
+                                <ul class="navbar-nav  sidebar sidebar-dark accordion degraded-left"  id="accordionSidebar">
+
+                                    <!-- Nav Item - Dashboard -->
+                                    <li class="nav-item active ptop-5">
+                                        <a class="nav-link" href="/panel">
+                                            <i class="fas fa-home"></i>
+                                            <span>Inicio</span>
+                                        </a>
+                                    </li>
+
+
+                                    <!-- Nav Item - Pages Collapse Menu -->
+                                    <li class="nav-item">
+                                        <a class="nav-link black" href="/page" >
+                                            <i class="fas fa-fw fa-folder"></i>
+                                            <span>Post</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link black" href="/panel/cursos" >
+                                            <i class="fas fa-fw fa-folder "></i>
+                                            <span>Cursos</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
                     </ul>
                 </div>
-            </div>
+            
         </nav>
         <!-- Page Wrapper -->
   <div id="wrapper">
 
 <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class=" navbar-nav  sidebar sidebar-dark accordion pt-5 degraded-left"  id="accordionSidebar">
 
-  <!-- Sidebar - Brand -->
-  <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/panel">
-    <div class="sidebar-brand-icon rotate-n-15">
-      <i class="fas fa-laugh-wink"></i>
+    <div class="display">
+         <!-- Nav Item - Dashboard -->
+        <li class="nav-item active ptop-5">
+            <a class="nav-link flex" href="/panel">
+            <i class="fas fa-home"></i>
+            <span>Inicio</span></a>
+        </li>
+
+        <!-- Divider -->
+
+        <!-- Heading -->
+
+
+        <!-- Nav Item - Pages Collapse Menu -->
+
+
+        <!-- Nav Item - Utilities Collapse Menu -->
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading s">
+            Addons
+        </div>
+
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+            <a class="nav-link flex" href="/page" >
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Post</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link flex" href="/panel/cursos" >
+            <i class="fas fa-fw fa-folder "></i>
+            <span>Cursos</span>
+            </a>
+        </li>
+
+        <!-- Nav Item - Charts -->
+        <!-- Divider -->
+        <hr class="sidebar-divider d-none d-md-block">
+
+    
     </div>
-    <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
-  </a>
-
-  <!-- Divider -->
-  <hr class="sidebar-divider my-0">
-
-  <!-- Nav Item - Dashboard -->
-  <li class="nav-item active">
-    <a class="nav-link" href="/panel">
-      <i class="fas fa-fw fa-tachometer-alt"></i>
-      <span>Dashboard</span></a>
-  </li>
-
-  <!-- Divider -->
-
-  <!-- Heading -->
-
-
-  <!-- Nav Item - Pages Collapse Menu -->
-
-
-  <!-- Nav Item - Utilities Collapse Menu -->
-  <!-- Divider -->
-  <hr class="sidebar-divider">
-
-  <!-- Heading -->
-  <div class="sidebar-heading">
-    Addons
-  </div>
-
-  <!-- Nav Item - Pages Collapse Menu -->
-  <li class="nav-item">
-    <a class="nav-link text-center" href="/page" >
-      <i class="fas fa-fw fa-folder col-12"></i>
-      <span class="col-12">Pages</span>
-    </a>
-    <a class="nav-link text-center" href="/panel/cursos" >
-      <i class="fas fa-fw fa-folder col-12"></i>
-      <span class="col-12">Cursos</span>
-    </a>
-  </li>
-
-  <!-- Nav Item - Charts -->
-  <!-- Divider -->
-  <hr class="sidebar-divider d-none d-md-block">
-
-
 
 </ul>
 <!-- End of Sidebar -->
