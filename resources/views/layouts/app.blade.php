@@ -17,7 +17,7 @@
     <title>{{ config('app.name', 'Shape-e') }}</title>
     <!-- Scripts -->
     
-
+    
     <script src="{{ asset('js/movimineto.js') }}" charset="utf-8" defer></script>
     <script src="{{ asset('js/app.js') }}" charset="utf-8" defer></script>
     <script src="{{ asset('js/optimizacion.js') }}" charset="utf-8" defer></script>

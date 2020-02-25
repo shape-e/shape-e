@@ -8,9 +8,8 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.2",
+        "php": "^7.4",
         "aws/aws-sdk-php": "^3.133",
-        "dreamonkey/laravel-cloudfront-url-signer": "^2.2",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0"
