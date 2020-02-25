@@ -54,7 +54,7 @@
 
             </div>
             <hr>
-            <p>{{$clases->descripcion}}</p>
+            <p><?php echo $clases->descripcion ?></p>
         </div>
 
         <div class="px-3 py-3" id="recursos" style="display:none;padding-right: 0px;padding-left: 10px;width:100%; background:#fff;    align-items: center;">
