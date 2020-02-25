@@ -11,11 +11,13 @@
         <div class="col-lg-8 col-md-10 mx-auto">
         <h1>{{$clases->nombre}}</h1>
         <?php echo $clases->descripcion?>
-
-
+        @foreach($clase_siguientes as $clase_siguiente)
+          <a href="{{$clase_siguiente->url}}" class="btn btn-success">Siguiente clase</a>
+        @endforeach
          </div>
       </div>
     </div>
+   
   </article>
 
   <hr>
