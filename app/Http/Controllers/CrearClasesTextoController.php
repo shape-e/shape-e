@@ -63,9 +63,11 @@ use App\Clase;
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($url, $id)
     {
-        //
+        $clase = Clase::where('id', $id)->firstOrFail();
+
+        return view('panel/cursos/clase_texto/edit', compact('clase', 'url'));    
     }
 
     /**
@@ -75,9 +77,18 @@ use App\Clase;
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $url, $id)
     {
-        //
+        $clase = Clase::find($id);
+        $clase->nombre = $request->get('nombre_clase');
+        $clase->descripcion = $request->get('descripcion');
+        $clase->url = $request->get('url');
+        $clase->id_curso = $url;
+        $clase->tipo_de_item= "texto";
+
+        $clase->save();
+        
+        return redirect('/panel/cursos/'. $url.'/edit');
     }
 
     /**

@@ -88,7 +88,7 @@
                         <h5 style="margin:10px 0 ;align-self: center;">Clase</h5>   
                         <div >
                             <a href="/panel/cursos/{{$clase->id_curso}}/clases/{{$clase->id}}/confirmDelete" class="btn btn-danger">Eliminar</a>
-                            <a href="/panel/cursos/{{$clase->id_curso}}/clases/{{$clase->id}}/edit" class="btn btn-info">Editar</a>
+                            <a href="/panel/cursos/{{$clase->id_curso}}/clasesTexto/{{$clase->id}}/edit" class="btn btn-info">Editar</a>
                         </div>
                 </div>
 
