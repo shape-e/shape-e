@@ -10,7 +10,7 @@
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4 ">
   <h1 class="h3 mb-0 text-gray-800 border-b">Post</h1>
-  <a href="/page/create" class=""><i class="fas fa-plus-circle"></i></a> 
+  <a href="/page/create" class=""><div class="plus"><span>+</span></div></a> 
 </div>
 
 <!-- Content Row -->
