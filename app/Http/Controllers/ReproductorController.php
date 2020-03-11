@@ -40,7 +40,7 @@ class ReproductorController extends Controller
             ->get();
     
     
-            return view('clase_texto', compact('curso', 'clases','recursos', 'clase_siguientes'));    
+            return view('clases/clase_texto', compact('curso', 'clases','recursos', 'clase_siguientes'));    
         }else {
             $clase_siguientes = Clase::where([
                 ['id','>', $clases->id], 
@@ -51,7 +51,7 @@ class ReproductorController extends Controller
             ->get();
     
     
-            return view('reproductor', compact('curso', 'clases','recursos', 'clase_siguientes'));    
+            return view('clases/reproductor', compact('curso', 'clases','recursos', 'clase_siguientes'));    
         }
        
 
