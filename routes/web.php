@@ -24,16 +24,22 @@ Route::get('/normas-de-la-comunidad', function () {
 
 Auth::routes();
 
+/*Inicio*/
 Route::get('/home', 'HomeController@index')->name('home');
 
+/*Temario:Lista de clases de los cursoso*/
 Route::get('/cursos/{url}', 'TemarioController@index');
 
+/*Temario:Lista de clases de los cursoso*/
 Route::get('/cursos/r/{url_curso}/{url}', 'ReproductorController@index');
 
+/*Comentarios de las clases */
 Route::get('/messages/{url}', 'MessageController@mensajes');
+
 
 Route::post('/messages', 'MessageController@agregarMensaje');
 
+/*Blog*/
 Route::get('/blog', 'BlogController@index');
 
 Route::get('/panel', 'PanelController@index');
