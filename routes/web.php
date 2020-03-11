@@ -42,23 +42,32 @@ Route::post('/messages', 'MessageController@agregarMensaje');
 /*Blog*/
 Route::get('/blog', 'BlogController@index');
 
+/*Panel*/
 Route::get('/panel', 'PanelController@index');
 
+/*Inicio de cursos internos*/
 Route::get('/cursosinterno', 'InternoController@index');
 
+/*Pagina del blog*/
 Route::resource('/page', 'PageController');
 
+/*Blog*/
 Route::get('/{url}', 'BlogController@post');
 
-
+/*Cursos*/
 Route::resource('/panel/cursos', 'CursosController');
 
+/*Creador de modulos de los cursos*/
 Route::resource('/panel/cursos/{url}/modulo', 'CrearModuloController');
 
+/*Eliminador de modulo*/
 Route::get('/panel/cursos/{url}/modulo/{id}/confirmDelete', 'CrearModuloController@confirmDelete');
 
+/*Creador de clases*/
 Route::resource('/panel/cursos/{url}/clases', 'CrearClasesController');
 
+/*Eliminador de clases*/
 Route::get('/panel/cursos/{url}/clases/{id}/confirmDelete', 'CrearClasesController@confirmDelete');
 
+/*creador de clases de texto*/
 Route::resource('/panel/cursos/{url}/clasesTexto', 'CrearClasesTextoController');
