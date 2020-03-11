@@ -77,7 +77,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light " style="   -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25)">
+        <nav class="navbar navbar-expand-lg navbar-light" style="   -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25)">
                     <div></div>
                 <div class="before" style="   -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25)">
                     <a class="navbar-brand logo" href="{{ url('/') }}">

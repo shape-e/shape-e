@@ -491,3 +491,26 @@ body{
     border-radius: 1%;
 }
 
+/*boton de agregado de post plus*/
+
+.plus{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    /* top: 0; */
+    bottom: 25px;
+    right: 27px;
+    background: linear-gradient(to bottom, rgba(83,44,211,1) 0%, rgba(169,52,215,1) 70%);
+}
+
+.plus span{
+    padding: 1rem;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
