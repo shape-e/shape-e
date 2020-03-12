@@ -14,7 +14,7 @@
     <input type="text" name="nombre_clase" id="nombre_clase" class="form-control w-100 my-2 py-2" placeholder="Nombre de la clase" value="{{$clase->nombre}}">
 
     <div class="form-group shadow-textarea">
-        <textarea_s class="form-control z-depth-1" id="descripcion" name="descripcion" rows="3" placeholder="Descripción" >{{$clase->descripcion}}</textarea_s>
+        <textarea_s class="form-control z-depth-1" id="descripcion" name="descripcion" rows="3" placeholder="Descripción" ><?php echo$clase->descripcion ?></textarea_s>
     </div>
 
     <input type="text" name="video" id="video" class="form-control w-100 my-2 py-2" placeholder="Link del video" value="{{$clase->video}}">

@@ -71,3 +71,6 @@ Route::get('/panel/cursos/{url}/clases/{id}/confirmDelete', 'CrearClasesControll
 
 /*creador de clases de texto*/
 Route::resource('/panel/cursos/{url}/clasesTexto', 'CrearClasesTextoController');
+
+/*listas de preguntas del examen*/
+Route::get('/panel/cursos/{url}/examen', 'ExamenController@index');
