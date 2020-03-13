@@ -17,7 +17,7 @@ class Practicante
     public function handle($request, Closure $next)
     {
         if (Auth::check()) {
-            if (Auth::user()->email == "aviladaniel009@gmail.com") {
+            if (Auth::user()->rango == "admin") {
                 return $next($request);
             }
             if (Auth::user()->rango == "practicante") {
