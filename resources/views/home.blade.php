@@ -13,11 +13,11 @@
 
 <div class="card-columns miscursos">
   <div class="card">
-    <img src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/JrPMxkJgRQa6KwJSp8GO" class="card-img-top" alt="...">
+    <img src="{{Request::root() . '/img/ico_principal/cursos-gratis-de-programacion-basica.webp'}}" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title text-center">Digital Academy | Cómo Empezar tu Academia Digital de Éxito (Sin Necesidad de ser Experto)</h5>
-      <p class="card-text"> Google Ads AdWords Analytics Tag Manager Instagram Facebook Analítica Web .</p>
-      <a class="btn btn-primary btn-block" href="#" role="button">Más información</a>
+      <h5 class="card-title text-center">Cursos Gratis De Programación Básica</h5>
+      <p class="card-text">Aprende programación desde 0.</p>
+      <a class="btn btn-primary btn-block" href="/cursos/cursos-gratis-de-programacion-basica" role="button">Más información</a>
     </div>
   </div>  
 </div>

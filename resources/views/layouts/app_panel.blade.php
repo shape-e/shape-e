@@ -157,7 +157,12 @@
                                             <span>Cursos</span>
                                         </a>
                                     </li>
-
+                                    <li class="nav-item">
+                                        <a class="nav-link flex" href="/panel/usuario" >
+                                        <i class="fas fa-fw fa-folder "></i>
+                                        <span>Usuarios</span>
+                                        </a>
+                                    </li>
                                 </ul>
 
                             </li>
@@ -209,7 +214,13 @@
             <span>Cursos</span>
             </a>
         </li>
-
+        <li class="nav-item">
+            <a class="nav-link flex" href="/panel/usuario" >
+            <i class="fas fa-fw fa-folder "></i>
+            <span>Usuarios</span>
+            </a>
+        </li>
+        
         <!-- Nav Item - Charts -->
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
