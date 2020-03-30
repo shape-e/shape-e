@@ -22,8 +22,23 @@
       <a class="btn btn-primary btn-block" href="/cursos/cursos-gratis-de-programacion-basica" role="button">Más información</a>
     </div>
   </div>  
+  </a>
+
+  <a href="/cursos/Curso-de-Python">
+
+  <div class="card">
+    <img src="{{Request::root() . '/img/ico_principal/1583594976python.png'}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title text-center">Curso de Python</h5>
+      <p class="card-text">Python presume de tener la sintaxis más clara entre los lenguajes, además de ser genial para iniciar a programar y muy poderoso como para aplicarlo a gran escala.</p>
+      <a class="btn btn-primary btn-block" href="/cursos/Curso-de-Python" role="button">Más información</a>
+    </div>
+  </div>  
+  </a>
 </div>
-</a>
+
+
+
 
 <div class="card-columns todoloscursos">
 
