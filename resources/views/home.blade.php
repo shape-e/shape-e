@@ -12,6 +12,8 @@
  
 
 <div class="card-columns miscursos">
+<a href="/cursos/cursos-gratis-de-programacion-basica">
+
   <div class="card">
     <img src="{{Request::root() . '/img/ico_principal/cursos-gratis-de-programacion-basica.webp'}}" class="card-img-top" alt="...">
     <div class="card-body">
@@ -21,6 +23,7 @@
     </div>
   </div>  
 </div>
+</a>
 
 <div class="card-columns todoloscursos">
 
