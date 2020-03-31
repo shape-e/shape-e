@@ -5,11 +5,11 @@
     <div class="row justify-content-center py-2">
         <div class="col-md-11 ">
 
-        <div class="py-3">
+       <!-- <div class="py-3">
             <a class="misCursos " style="color:#ffffff;">Mis cursos</a>
             <a id ="todocursos" class="cursos mx-2" style="color:#ffffff;">Todos los Cursos</a>
         </div>
- 
+ -->
 
 <div class="card-columns miscursos">
 <a href="/cursos/cursos-gratis-de-programacion-basica">
