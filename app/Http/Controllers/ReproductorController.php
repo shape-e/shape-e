@@ -18,7 +18,7 @@ class ReproductorController extends Controller
      */
         public function __construct()
         {
-            $this->middleware('practicante');
+            $this->middleware('gratis');
         }
 
     

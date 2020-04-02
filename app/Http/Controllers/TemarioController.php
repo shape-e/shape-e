@@ -16,7 +16,7 @@ class TemarioController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('practicante');
+        $this->middleware('gratis');
     }
 
     public function index($url)
