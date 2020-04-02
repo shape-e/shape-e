@@ -16,12 +16,6 @@ class PlanGratis
     public function handle($request, Closure $next)
     {
         if (Auth::check()) {
-            if (Auth::user()->rango == "admin") {
-                return $next($request);
-            }
-            if (Auth::user()->rango == "practicante") {
-                return $next($request);
-            }
             if (Auth::user()->rango == "gratis") {
                 return $next($request);
             }
