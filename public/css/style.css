@@ -511,6 +511,9 @@ body{
     bottom: 25px;
     right: 27px;
     background: linear-gradient(to bottom, rgba(83,44,211,1) 0%, rgba(169,52,215,1) 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .plus span{
@@ -518,9 +521,6 @@ body{
     font-size: 40px;
     font-weight: bold;
     line-height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
 }
 
