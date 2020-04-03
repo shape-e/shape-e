@@ -514,9 +514,13 @@ body{
 }
 
 .plus span{
-    padding: 1rem;
     color: #fff;
     font-size: 40px;
     font-weight: bold;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
