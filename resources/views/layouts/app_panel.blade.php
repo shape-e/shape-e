@@ -71,9 +71,9 @@
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
      <!-- <link href="{{ asset('css/cssdesarrollo.css') }}" rel="stylesheet">     -->
-
+    
      <script src="{{asset('js/tinymce/tinymce.min.js')}}" referrerpolicy="origin"></script>
-    <script>tinymce.init({selector:'textarea'});</script>
+    <script>tinymce.init({selector:'textarea_s'});</script>
 </head>
 <body>
     <div id="app">
@@ -157,7 +157,12 @@
                                             <span>Cursos</span>
                                         </a>
                                     </li>
-
+                                    <li class="nav-item">
+                                        <a class="nav-link flex" href="/panel/usuario" >
+                                        <i class="fas fa-fw fa-folder "></i>
+                                        <span>Usuarios</span>
+                                        </a>
+                                    </li>
                                 </ul>
 
                             </li>
@@ -209,7 +214,13 @@
             <span>Cursos</span>
             </a>
         </li>
-
+        <li class="nav-item">
+            <a class="nav-link flex" href="/panel/usuario" >
+            <i class="fas fa-fw fa-folder "></i>
+            <span>Usuarios</span>
+            </a>
+        </li>
+        
         <!-- Nav Item - Charts -->
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">

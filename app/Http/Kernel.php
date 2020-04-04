@@ -63,6 +63,7 @@ class Kernel extends HttpKernel
         'miscuro' => \App\Http\Middleware\CursosMiddleware::class,
         'admi' => \App\Http\Middleware\Admin::class,
         'practicante' => \App\Http\Middleware\Practicante::class,
+        'gratis' => \App\Http\Middleware\PlanGratis::class,
 
     ];
 

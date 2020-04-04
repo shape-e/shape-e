@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 
+
 class Admin
 {
     /**
@@ -17,7 +18,7 @@ class Admin
     public function handle($request, Closure $next)
     {
         if (Auth::check()) {
-            if (Auth::user()->email == "aviladaniel009@gmail.com") {
+            if (Auth::user()->rango == "admin") {
                 return $next($request);
             }else if(Auth::user()->rango == "praticante"){
                 return redirect()->guest('home');

@@ -17,7 +17,7 @@
     <title>{{ config('app.name', 'Shape-e') }}</title>
     <!-- Scripts -->
     
-
+    
     <script src="{{ asset('js/movimineto.js') }}" charset="utf-8" defer></script>
     <script src="{{ asset('js/app.js') }}" charset="utf-8" defer></script>
     <script src="{{ asset('js/optimizacion.js') }}" charset="utf-8" defer></script>
@@ -79,6 +79,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-light bg-light " style="background: -webkit-linear-gradient(0deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    background: -moz-linear-gradient(0deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    background: -o-linear-gradient(0deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    background: -ms-linear-gradient(0deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    background: linear-gradient(90deg, #352c73 0, #3d2ca5 25%, #3d2ca5);    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);padding: 0px 50px;">
             <div class="container">
+
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="https://shape-e.com/svg/bo330-w53wt.webp" width="130px" alt="logo" >
                 </a>

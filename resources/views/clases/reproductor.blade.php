@@ -1,44 +1,30 @@
 @extends('layouts.app')
 
 @section('content')
+<script src="http://jwpsrv.com/library/4+R8PsscEeO69iIACooLPQ.js"></script>
+
 <div class="d-flex flex-wrap">
    <div class="d-a d-flex flex-column">
     @if ($clases->formato_video === "externo")
         <div class="embed-container">
+        <iframe  class="w-100 fm-video video-js "
+        src="" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        </div>
+    @elseif ($clases->formato_video === "youtube")
+    <div class="embed-container">
         <iframe  class="w-100 fm-video video-js "
         src="{{$clases->video}}" 
         frameborder="0" 
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen></iframe>
         </div>
-    @elseif ($clases->formato_video === "youtube")
-    <link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" />
-
-<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-
-
-    <video
-    id="vid1"
-    class="video-js vjs-default-skin"
-    controls
-    width="640" height="264"
-    data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=xjS6SftYQaQ"}] }'
-  >
-  </video>
-  <script src="{{ asset('js/Youtube.js') }}" charset="utf-8" defer></script>
-
-  <script>
-  // An example of playing with the Video.js javascript API
-  // You can look at the doc there: http://docs.videojs.com/docs/guides/api.html
-  videojs('vid1').ready(function() {
-    var myPlayer = this;
-    myPlayer.src({ type: 'video/youtube', src: 'https://www.youtube.com/watch?v=xjS6SftYQaQ' });
-  });
-  </script>
-  
     @else
+    
     <video id="fm-video"  class="w-100 fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
-          <source src="{{$clases->video}}" type="video/mp4">
+          <source id="video_externo" src="{{$clases->video}}" type="video/mp4">
         </video>
     @endif
         
@@ -68,7 +54,7 @@
 
             </div>
             <hr>
-            <p>{{$clases->descripcion}}</p>
+            <p><?php echo $clases->descripcion ?></p>
         </div>
 
         <div class="px-3 py-3" id="recursos" style="display:none;padding-right: 0px;padding-left: 10px;width:100%; background:#fff;    align-items: center;">

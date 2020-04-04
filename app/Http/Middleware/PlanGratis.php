@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 
-class Practicante
+class PlanGratis
 {
     /**
      * Handle an incoming request.
@@ -21,6 +21,9 @@ class Practicante
                 return $next($request);
             }
             if (Auth::user()->rango == "practicante") {
+                return $next($request);
+            }
+            if (Auth::user()->rango == "gratis") {
                 return $next($request);
             }
             if (Auth::user()->rango == "") {

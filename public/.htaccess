@@ -18,4 +18,18 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+    RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^https://shape-e.com/*/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://shape-e.com/*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://shape-e.com/*/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://shape-e.com/*$      [NC]
+RewriteRule .*\.(mp3|mp4)$ - [F,NC]
+
+RewriteEngine on # Activa el mod_rewrite
+
+RewriteCond %{HTTP_REFERER} ^$
+RewriteRule .*\.(mp3|mp4)$ - [F,NC]
 </IfModule>
+
